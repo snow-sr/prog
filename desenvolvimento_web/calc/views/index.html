@@ -148,6 +148,9 @@ function alert(message, type) {
 
 function easter() {
     var decimals = (scr.value + "").split(".")[1].length
+    if(decimals == undefined){
+    decimals = 0
+    }
     console.log(decimals)
     if (scr.value == 2212){
     alert('Opa! Bolo?', 'info')
