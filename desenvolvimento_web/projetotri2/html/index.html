@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logojs.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Jornal:Js - A sua API de conhecimento </title>
+</head>
+<body>
+<!--NavBar-->    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-center">
+    <a class="navbar-brand" href="#">Jornal:<span class="titlespan">Js</span></a>
+    <div class="collapse navbar-collapse col-5" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Página inicial <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Anúncios</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nosso outros veículos de comunicação</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Twitter</a>
+                    <a class="dropdown-item" href="#">Instagram</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--NavBar-->    
+
+<!--Jumbotron-->
+<div class="jumbotron jumbotron-fluid" id="topo">
+    <div class="container">
+        <h1 class="display-3">Quem somos nós?</h1>
+        <p class="lead">Somos uma empresa jornalistíca que tenta ao máximo te deixar informado sobre as mudanças e lançamentos do mundo da Programação e Tecnologia da informação!</p>
+        <hr class="my-2">
+        <p>Anuncie conosco!</p>
+        <p class="lead">
+           <!-- Button trigger modal -->
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelId">
+             Anunciar agora
+           </button>
+           
+           <!-- Modal -->
+           <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                           <div class="modal-header">
+                                   <h5 class="modal-title">Você achou uma parte de demonstração do site!</h5>
+                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true">&times;</span>
+                                       </button>
+                               </div>
+                       <div class="modal-body">
+                           <div class="container-fluid">
+                               Infelizmente, esse site é apenas demonstrativo e não temos nada além desta imagem de 404 para te mostrar agora :(
+                               <br> 
+                               <img src="../images/404.png" alt="404 Error" class="img-fluid mx-auto d-block">
+                            </div>
+                       </div>
+                       <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <script>
+               $('#exampleModal').on('show.bs.modal', event => {
+                   var button = $(event.relatedTarget);
+                   var modal = $(this);
+               });
+           </script>
+        </p>
+    </div>
+</div>
+<!--Jumbotron-->
+
+
+
+<!--Main-page (News)-->
+<div class="container">
+
+    <hr class="news-divider">
+    <!--News 1-->
+    <div class="row news">
+        <div class="col-md-7 order-md-2">
+            <h2 class="news-heading">Third featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+                here.
+            </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="../images/logojs.png" alt="" class="img-fluid mx-auto featurette-image">
+        </div>
+    </div>
+    <!--News 1-->
+    <hr class="news-divider">
+    <!--News 2-->
+    <div class="row news">
+        <div class="col-md-7">
+            <h2 class="news-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+                here.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img src="../images/logojs.png" alt="" class="img-fluid mx-auto featurette-image">
+        </div>
+    </div>
+    <!--News 2-->
+    <hr class="news-divider">
+
+    <!--News 3-->
+    <div class="row news">
+        <div class="col-md-7 order-md-2">
+            <h2 class="news-heading">Third featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+                here.
+            </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img src="../images/logojs.png" alt="" class="img-fluid mx-auto featurette-image">
+        </div>
+    </div>
+
+    <hr class="news-divider">
+    <!--News 3-->
+</div>
+<!--Main-page (News)-->
+
+<!--Footer-->
+<footer class="container-fluid">
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">João Felipi Cardoso</h1>
+        <p class="lead">Tecnologias utilizadas: Html, Css, Bootstrap, Js.</p>
+        <hr class="my-2">
+        <p class="lead">
+            <i class="bi-github" role="img" aria-label="GitHub"></i> <a href="https://github.com/SrDasNeves"> Meu github</a>
+        </p>
+        <a class="btn btn-primary btn-lg" href="#topo" role="button">Voltar ao topo</a>
+    </div>
+</div>
+</footer>
+<!--Footer-->
+
+<!--Javascript from Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<!--Javascript from Bootstrap-->  
+
+<!--Personal Javascritp-->
+<script src="../src/main.js"></script>
+<!--Personal Javascritp-->
+</body>
+</html>

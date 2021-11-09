@@ -1,0 +1,37 @@
+#TopTitle{
+    margin-left: 10px;
+}
+#toptitle2{
+    color: deeppink;
+}
+#txt2{
+    color: blanchedalmond;
+}
+#cards{
+    box-align: center;
+}
+#txt3{
+    color: deeppink;
+}
+body{
+    background-color:#292341;
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: rgb(240, 152, 221);
+}
+h4{
+    color:deeppink;
+}
+p{
+    font-family: fantasy, monospace;
+    color: rgb(49, 10, 85);
+}
+ul{
+    color:rgb(175, 103, 243);
+    text-decoration: underline;
+    text-align: center;
+}
+

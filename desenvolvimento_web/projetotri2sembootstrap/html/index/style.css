@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Montserrat:ital,wght@1,300&family=Roboto:wght@300;500&display=swap');:root {
+    --back: #242426;
+    --detailsP: #F2C230; 
+    --texto:#ffffff; 
+    --detalhes: #F2AE30; 
+    --main: #f7df1e; 
+    --backNav: rgb(46, 46, 46);
+    --decoration: #8447FF;
+    --fullblack:#000;
+    --highlight: #111;
+  }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--back);
+    color: var(--texto); 
+
+}
+
+/*=======================Navbar======================================*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--backNav);
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    display: block;
+    color: var(--texto);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: var(--highlight)
+  }
+
+.navbar-title{
+    font-size: 110%;
+    font:300;
+    font-family: Roboto, monospace;
+    float:right;
+    color: var(--main);
+}
+/*=======================Navbar======================================*/
+
+/*=========================Body======================================*/
+
+  .card {
+    width: 100%;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+  }
+  
+  .card__link{
+    position: relative;
+    text-decoration: none;
+    color: var(--back);
+  }
+  
+  .card__title {
+    grid-row: 1;
+    text-align: center;
+    font-size: 300%;
+    color: var(--back);
+  }
+  
+  .card__apply {
+    text-align: center;
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  .card-1 {
+    background-color: var(--main);
+  }
+  
+  hr{
+    margin-top: 20%;
+  }
+/*===================================================================*/  
+
+  .main{
+      text-align: center;
+  }
+
+/*===================================================================*/  
+
+  .news{
+    padding: 20px;
+  }
+  .new{
+    width: 40%;
+    float: left;
+    padding: 20px;
+  }
+  .new-link{
+      text-decoration: none;
+      font-size: 150%;
+      color:var(--decoration);
+  }
+
+  .new-link2{
+    text-decoration: none;
+    font-size: 150%;
+    color:var(--texto);
+}
+
+  .heading-new{
+      background-color: var(--back);
+      font-size:160%;
+      color:var(--main);
+  }
+
+  .main-new{
+    font-size: 126%;
+    color: var(--back);
+  }
+
+  .new1{
+    margin-right: 40px;
+    width: 45%;
+    min-height: 200px;
+  }
+  .newtop{
+      background-color:var(--texto);
+  }
+  .new2{
+    width: 45%;
+    min-height: 200px;
+    background-color: var(--detalhes);
+  }
+
+  .new3{
+    width: 45%;
+    min-height: 200px;
+    background-color: var(--decoration);
+    margin-right: 40px;
+  }
+
+  .new4{
+    width: 45%;
+    min-height: 200px;
+    background-color: var(--decoration);
+  }
+
+  
+/*=========================Body======================================*/
+
+/*=======================Utilities===================================*/
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}
+
+.realce{
+    background-color: var(--decoration);
+    color:var(--fullblack);
+    text-decoration: underline;
+}
+.realce2{
+    background-color: var(--texto);
+    color:var(--fullblack);
+    text-decoration: underline;
+}
+/*=======================Utilities===================================*/
+  
+
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Poppins:wght@200;300&family=Roboto:wght@100&display=swap');
+
+body {
+    background: #eee;
+    min-height: 3000px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  .imagem-um{
+    color:rgb(252, 55, 55);
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+  }
+
+  .card{
+    padding-top:5%;
+  }
+
+  .text-card{
+    display: inline-block;
+    max-width: 60%;
+    max-height:300px;
+    vertical-align: top;
+    margin-left:10px;
+    padding-bottom:10%;
+  }
+
+  .imagem-cards{
+    color:rgb(252, 55, 55);
+    display: block;
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    background-color: #333;
+  }
+
+  .Redirect{
+    border-bottom: 3px solid rgb(252, 55, 55);
+    transition: all 0.25s linear;
+    position: relative;
+  }
+  
+  .Redirect:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #2c84ff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+  }
+  
+  .Redirect:hover:before {
+    transform: scale(1);
+  }
+  
+  a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+  }
+
+  
+  nav {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    height: 80px;
+    line-height: 80px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+  }
+  nav.scrollUp {
+    transform: translateY(-80px);
+  }
+  nav ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    float:right;
+  }
+  nav ul.navbar-menu li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  nav ul.navbar-menu li a {
+    color: #666;
+    font-size: 16px;
+  }
+  nav a#brand {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .destaque{
+    color:rgb(252, 55, 55)
+  }

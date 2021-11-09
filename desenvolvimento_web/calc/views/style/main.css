@@ -1,0 +1,55 @@
+:root{
+--pink: #e2cfeaff; //Pink 
+--prpW: #a06cd5ff; //Purple (weak)
+--prpS: #6247aaff; //Purple (Strong)
+--ble: #102b3fff; // Blue
+--blk: #010400ff; // Rich Black
+--rst: #00ff00ff; // Green
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mohave:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+  
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+header, footer{
+    font-family: 'Inter', sans-serif;
+    color: #6247aaff;
+}
+
+.main{
+    font-family: 'Roboto', sans-serif;
+    color: #FFF275;
+    background-color: #1212;
+    border: 1px solid #6247aaff;
+    padding-bottom: 10%;
+}
+
+
+input{
+    color: #FFF275;
+    background-color: #102b3fff;
+    font-size: 6 rem;
+}
+
+#numbers{
+    margin-top: 20%;
+    font-size: 2em;
+    font-family: 'Mohave', sans-serif;
+    background-color: #1212;
+}
+
+#operators{
+    margin-top: 9.5%;
+    font-size: 2em;
+    font-family: 'Mohave', sans-serif;
+    background-color: #1212;
+}
+
+.row div button{
+    margin: 9px;
+    width: 80%;
+}

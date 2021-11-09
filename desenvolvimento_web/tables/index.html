@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto+Mono:ital,wght@1,200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Atividade, Tabelas e Logins</title>
+</head>
+
+<body class='bg-dark'>
+    <hr>
+    <h2>
+        Apenas aquecendo o Javascript, preencha os dados e veja-os na tabela!
+    </h2>
+    <h3>
+        <a href="aulas.html">Tabela de aulas da semana.</a>    
+    </h3>
+    <hr>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="form-group">
+            <div class="container">
+
+                <form>
+                    <label for="Nome">Nome:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Insira seu nome">
+                    <br>
+                    <label for="Birth">Data de Nascimento:</label>
+                    <input type="Date" id="Birth" class="form-control" placeholder="Data de nascimento">
+                    <br>
+                    <label for="Tel">Telefone:</label>
+                    <input type="text" id="Tel" class="form-control" placeholder="Insira seu telefone">
+                    <br>
+                    <label for="Email">E-mail:</label>
+                    <input type="email" id="email" class="form-control"
+                        placeholder="Insira seu melhor email">
+                    <br>
+                    <label for="Rg">Rg:</label>
+                    <input type="text" id="reggeral" class="form-control"
+                        placeholder="Insira seu número de Registro geral">
+                    <br>
+                    <label for="Film">Filme Favorito:</label>
+                    <input type="text" id="film" class="form-control"
+                        placeholder="Insira seu filme favorito">
+                    <br>
+                    <label for="Music">Música Favorita:</label>
+                    <input type="text" id="music" class="form-control"
+                        placeholder="Insira sua música preferida">
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="tables()">Enviar Dados</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class='container'>
+
+            <table class="table table-bordered table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Atributos:</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Data de nascimento</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Rg</th>
+                    <th scope="col">Filme Favorito</th>
+                    <th scope="col">Música favorita</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Dados aleatórios:</th>
+                    <td>Marcão da massa</td>
+                    <td>1975-7-18</td>
+                    <td>(47) XXXXX-XXXX</td>
+                    <td>Email@email.com</td>
+                    <td>12.851.623-56</td>
+                    <td>Cidade de Deus</td>
+                    <td>Kyoto - Froid</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dados aleatórios:</th>
+                    <td>João Felipi</td>
+                    <td>2005-12-22</td>
+                    <td>(47) XXXXX-XXXX</td>
+                    <td>Joaofelipi877@gmail.com</td>
+                    <td>00.000.000-00</td>
+                    <td>1947</td>
+                    <td>Sinusite - Rodrigo Alarcon</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dados do input:</th>
+                    <td id="nometabela">A preencher</td>
+                    <td id="birthtabela">A preencher</td>
+                    <td id='numtabela'>A preencher</td>
+                    <td id='emailtabela'>A preencher</td>
+                    <td id='rgtabela'>A preencher</td>
+                    <td id='filmetabela'>A preencher</td>
+                    <td id='musicatabela'>A preencher</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
