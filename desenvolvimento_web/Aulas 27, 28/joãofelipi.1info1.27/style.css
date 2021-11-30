@@ -1,0 +1,21 @@
+body,html{
+    height: 100%; 
+    overflow: hidden;
+    background: #a25ce0
+  }
+  
+  .l-form{
+    width: 50%;
+    background-color: #410179;
+    border-radius:12px;
+    padding: 2%;
+  }
+  
+  .i-form{
+    margin-bottom: 10px;
+  }
+  
+  .spacing{
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
