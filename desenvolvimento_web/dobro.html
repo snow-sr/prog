@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Triplo | Dobro</title>
+</head>
+<body>
+    <div id="Result">
+        
+    </div>
+    <div>
+        <label for="Valor">Insira um valor:</label>
+        <input type="number" id="Valor">
+        
+        <br>
+        <button onclick="Double()">Dobro</button>
+        <button onclick="triple()">Triplo</button>
+    </div>
+    <script>
+        var number = document.getElementById("Valor")
+        var result = document.getElementById("Result");
+        function Double(){
+           console.log(number.value)
+           double = number.value * 2
+           result.innerHTML = `O <italic>dobro</italic> do seu número é: <strong>${double}</strong>`
+        }
+
+        function triple(){
+            let triple = number.value * 3
+            result.innerHTML = `O <italic>Triplo</italic> do seu número é: <strong>${triple}</strong>` 
+
+        }
+    </script>
+</body>
+</html>
+
