@@ -8,16 +8,20 @@
     <title>Triplo | Dobro</title>
 </head>
 <body>
-    <div id="Result">
-        
-    </div>
-    <div>
+    <div class="main">
+    <div class="numberPah">
         <label for="Valor">Insira um valor:</label>
+        <br>
         <input type="number" id="Valor">
         
         <br>
         <button onclick="Double()">Dobro</button>
         <button onclick="triple()">Triplo</button>
+    </div>
+    <br>
+    </div>
+    <div class="fixedtop pdt" id="Result">
+        
     </div>
     <script>
         var number = document.getElementById("Valor")
@@ -25,12 +29,12 @@
         function Double(){
            console.log(number.value)
            double = number.value * 2
-           result.innerHTML = `O <italic>dobro</italic> do seu número é: <strong>${double}</strong>`
+           result.innerHTML = `O <span class="detalhe"><italic>dobro</italic></span> do seu número é: <span class="detalheNumero"><strong>${double}</strong></span>`
         }
 
         function triple(){
             let triple = number.value * 3
-            result.innerHTML = `O <italic>Triplo</italic> do seu número é: <strong>${triple}</strong>` 
+            result.innerHTML = `O <span class="detalhe"><italic>Triplo</italic></span> do seu número é: <span class="detalheNumero"><strong>${triple}</strong></span>` 
 
         }
     </script>
