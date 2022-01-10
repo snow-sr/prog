@@ -25,7 +25,7 @@ def alunos_problema(a_sorri, b_sorri):
     retorne True quando houver problemas
     """
 
-    if a_sorri == True and b_sorri == True:
+    if a_sorri and b_sorri:
         return True
     elif a_sorri == False and b_sorri == False:
         return True
