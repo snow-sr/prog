@@ -3,6 +3,8 @@ const list = document.getElementById("List");
 const tasks = [];
 const solved = [];
 
+
+//Takes the input value and creates a task with it, creates the task at array and rund syncTask()
 function createNewTask(){
   let taskToBeCreated = document.getElementById("InputTask").value;
 
@@ -24,6 +26,8 @@ function createNewTask(){
 
 };
 
+
+//Read the tasks array and create the elements at HTML @task = Text to be created as a task
 function syncTask(task){
 
   if(task.solved){
@@ -37,6 +41,8 @@ function syncTask(task){
 
 };
 
+
+//Finds and remove the element searched  @taskId = Id of the task you're trying to remove
 function removeTask(taskId){ 
   
   let id = taskId.id;
@@ -51,3 +57,12 @@ function removeTask(taskId){
   tasks.splice(remove, 1)
 
 }
+
+
+//Listening to ENTER to create a new task without using forms
+document.addEventListener ('keypress', (event) => {
+  const keyName = event.key;
+  if(keyName == "Enter"){
+    createNewTask()
+  }
+});
