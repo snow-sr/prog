@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Bhaskara</title>
+</head>
+
+<body class="bg-gray-900 content-center">
+
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div class="py-12 bg-gray-300 mt-36">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Calcular Bhaskara
+        </p>
+        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">João Felipi Cardoso - 2info1</p>
+
+        <div>
+          <p class="mt-4 max-w-2xl text-xl text-indigo-500 lg:mx-auto">Resultado: </p>
+          <p id="result" class="text-lg text-fuchsia-900"></p>
+        </div>
+      </div>
+    </div>
+     
+
+    <div class="mt-5">
+
+      <div class="m-12 md:mt-0 md:col-span-2">
+         
+            <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+              
+              <form class="w-full max-w-lg">
+                <div class="flex flex-wrap -mx-3 mb-6">
+
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      Insira o valor de a
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="VA" type="number" min="0" required placeholder="Valor de a">
+                  </div>
+
+                  <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                      Insira o valor de b
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="VB" type="number" placeholder="Valor de b">
+                  </div>
+                  
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                      Valor de c
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="VC" type="number" placeholder="Valor de c">
+                    <p class="text-gray-600 text-xs italic">Após preencher, clique em calcular!</p>
+                  </div>
+                </div>
+               
+              </form>
+             
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+              <button id="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Calculate</button>
+            </div>
+
+            </div>
+
+
+
+      </div>
+  
+    </div>
+  
+  </div>
+
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+</html>
