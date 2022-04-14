@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+body {
+  margin: none;
+  height: 100%;
+  color: wheat;
+  background-color: darkslateblue;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 10vh;
+}
+
+.citation {
+  font-size: 3vh;
+}
+
+.author {
+  font-style: italic;
+  font-size: 4vh;
+}
+
+.dark {
+  color: #121212;
+}
