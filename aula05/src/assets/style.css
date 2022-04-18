@@ -1,0 +1,36 @@
+body{
+    background-color: #121212;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+#app{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 15% auto 10%;
+    grid-template-areas: 
+    "header header"
+    "side-navigation content"
+    "side-navigation footer";
+}
+
+#header, #footer, #side-navigation, #content{
+    border: 1px solid hotpink;
+}
+
+#header{
+    grid-area: header;
+}
+#footer{
+    grid-area: footer;
+}
+#side-navigation{
+    grid-area: side-navigation;
+}
+
+#content{
+    grid-area: content;
+}
