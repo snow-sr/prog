@@ -19,15 +19,15 @@ export default {
 <template>
   <HeaderComponent></HeaderComponent>
   <ContentArea>
-    <Block typeOfBorder="borderBlue">Hey! This is block 1</Block>
-    <Block typeOfBorder="borderWhite">Hey! This is block 2</Block>
-    <Block typeOfBorder="borderBlue">Hey! This is block 3</Block>
-    <Block typeOfBorder="borderBlue">Hey! This is block 4</Block>
+    <Block typeOfBorder="borderBlue" title="Block 1"></Block>
+    <Block typeOfBorder="borderWhite" title="Block 2"></Block>
+    <Block typeOfBorder="borderBlue"  title="Block 3"></Block>
+    <Block typeOfBorder="borderBlue"  title="Block 4"></Block>
+    <Block typeOfBorder="borderBlue"  title="Block 5"></Block>
 
-    <Block typeOfBorder="borderBlue">Hey! This is block 5</Block>
-    <Block typeOfBorder="borderWhite">Hey! This is block 6</Block>
-    <Block typeOfBorder="borderBlue">Hey! This is block 7</Block>
-    <Block typeOfBorder="borderBlue">Hey! This is block 8</Block>
+    <Block typeOfBorder="borderWhite" title="Block 6"></Block>
+    <Block typeOfBorder="borderBlue"  title="Block 7"></Block>
+    <Block typeOfBorder="borderBlue"  title="Block 8"></Block>
   </ContentArea>
   <SideNav></SideNav>
   <FooterComponent></FooterComponent>
