@@ -14,17 +14,17 @@ export default {
   >
     <ul class="flex">
       <li class="mr-6">
-        <RouterLink class="text-blue-500 hover:text-blue-800" To="/Home"
-          >Active</RouterLink
+        <RouterLink class="text-pink-500 hover:text-pink-800" to="/"
+          >Home</RouterLink
         >
       </li>
       <li class="mr-6">
-        <RouterLink class="text-blue-500 hover:text-blue-800" To="/teams"
+        <RouterLink class="text-pink-500 hover:text-pink-800" to="/teams"
           >Times</RouterLink
         >
       </li>
       <li class="mr-6">
-        <RouterLink class="text-blue-500 hover:text-blue-800" To="/players"
+        <RouterLink class="text-pink-500 hover:text-pink-800" to="/players"
           >Jogadores</RouterLink
         >
       </li>
