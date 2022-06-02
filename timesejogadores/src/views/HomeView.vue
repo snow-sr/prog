@@ -21,7 +21,7 @@ export default {
       <div class="text-white text-center border m-5">
         <ul v-for="team in teams">
           <li class="underline mt-3 mb-3">
-            {{ team.name }}
+            <router-link :to="{ name: 'Jogadores', params: { lookingFor: team.name }}">{{team.name}}</router-link>
           </li>
         </ul>
       </div>

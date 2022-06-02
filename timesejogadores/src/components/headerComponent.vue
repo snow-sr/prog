@@ -14,7 +14,7 @@ export default {
   >
     <ul class="flex">
       <li class="mr-3">
-        <RouterLink class="text-pink-500 hover:text-pink-800" to="/"
+        <RouterLink class="text-pink-500 hover:text-pink-800" :to="{name: 'Home'}"
           >Home</RouterLink
         >
       </li>
@@ -22,7 +22,7 @@ export default {
         |
       </p>
       <li class="mr-3">
-        <RouterLink class="text-pink-500 hover:text-pink-800" to="/teams"
+        <RouterLink class="text-pink-500 hover:text-pink-800" :to="{name: 'Times'}"
           >Time</RouterLink
         >
       </li>
@@ -30,7 +30,7 @@ export default {
         |
       </p>
       <li class="mr-6">
-        <RouterLink class="text-pink-500 hover:text-pink-800" to="/players"
+        <RouterLink class="text-pink-500 hover:text-pink-800" :to="{name: 'Jogadores'}"
           >Jogadores</RouterLink
         >
       </li>
