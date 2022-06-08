@@ -13,6 +13,9 @@ export const useTeamsStore = defineStore("Teams", {
     getTeam: (state) => {
       return (teamName) => state.teams.find((team) => team.name === teamName);
     },
+    getAllTeams: (state) => {
+      return (state.teams)
+    },
   },
   actions: {
     addTeam(x) {
